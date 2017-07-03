@@ -1,5 +1,6 @@
 body {
    margin: 0 auto;
+   padding: 0;
    display: flex;
    flex-flow: column;
    background-color: thistle;
@@ -12,5 +13,9 @@ header, nav{
 header {
    flex-direction: row;
    justify-content: space-around;
-   background-color: rgba(0,0,0,0.2)
+   background-color: rgba(0,0,0,0.2);
+}
+.banner-img {
+   width: 100vw;
+   margin: 0;
 }
