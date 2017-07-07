@@ -52,13 +52,15 @@ header {
    margin: 0 5%;
 }
 .icons a {
-	padding: 10px 10px;
    display: block;
-   color: white;
 }
 
 .main-nav a:hover {
-	font-weight: bolder;
+	font-weight: bold;
+}
+
+.icons img:hover {
+   opacity: .6;
 }
 
 .banner {
@@ -97,14 +99,10 @@ header {
       font-size: .98em;
    }
 
-   .main-nav a:hover {
-      background-color: white
-      color: #fff;
-   }
-
    .nav-dot {
       display: none;
    }
+
    .icons {
       display: none;
       justify-content: center;
@@ -136,6 +134,7 @@ header {
    .main-nav a {
       padding: 10px 2px;
       font-size: .85em;
+      text-shadow: 2px 2px 3px #333;
    }
 
    #item-1 {
@@ -154,13 +153,20 @@ header {
       text-align: center;
    }
 
+   .icons img {
+      width: 20px;
+   }
+
+   .icons a {
+      padding: 15px 10px;
+   }
 
    .banner {
       height: 40vh;
    }
 
    .banner-logo {
-      margin: 0 auto 8% auto;
+      margin: 0 auto 2% auto;
       width: 300px;
    }
 
@@ -179,12 +185,16 @@ header {
       padding-bottom: 4%;
    }
 
+   .main-nav a {
+      font-size: 1.05em;
+   }
+
    .nav-dot {
       padding-left: 10px;
    }
 
-   .icons a {
-      padding: 10px 10px;
+   .icons img {
+      width: 25px;
    }
 
    .banner {
@@ -196,13 +206,24 @@ header {
       width: 400px;
    }
 
-   .main-nav a {
-      font-size: 1.05em;
-   }
 
 }
 
 @media (min-width: 1025px){
+
+   #item-4 {
+      padding-top: 16px;
+      padding-bottom: 4%;
+   }
+
+   .icons img {
+      width: 30px;
+   }
+
+   .main-nav a {
+      font-size: 1.2em;
+   }
+
    .banner {
       height: 60vh;
    }
