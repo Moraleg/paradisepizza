@@ -63,6 +63,10 @@ header {
    opacity: .7;
 }
 
+main {
+   background-attachment: fixed;
+   margin: 0;
+}
 .banner {
    background: url('../images/splash.jpg');
    background-repeat: no-repeat;
@@ -72,6 +76,7 @@ header {
    flex-direction: column;
    justify-content: center;
 }
+
 
 .banner-logo {
    margin: 0 auto;
@@ -84,7 +89,41 @@ header {
    text-align: center;
    width: 70vw;
    margin: 0 auto;
-   /*line-height: 1.6;*/
+}
+
+.mid-container {
+   display: flex;
+   flex-direction: row;
+}
+
+.menu {
+   background: url('../images/slider_asstd.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 50%;
+   height: 250px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   color: white;
+   text-shadow: 2px 2px 3px #333;
+   letter-spacing: 1.4px;
+}
+
+.specials {
+   background: url('../images/slider_pasta2.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 50%;
+   height: 250px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   color: white;
+   text-shadow: 2px 2px 3px #333;
+   letter-spacing: 1.4px;
 }
 
 
