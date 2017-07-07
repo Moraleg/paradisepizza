@@ -36,6 +36,7 @@ header {
 
 .main-nav {
    margin: 0 5%;
+   letter-spacing: 1.2px;
 
 }
 
@@ -43,7 +44,6 @@ header {
 	text-align: center;
 	display: block;
 	padding: 10px 14px;
-   font-size: .95em;
    color: white;
    text-transform: uppercase;
 }
@@ -80,9 +80,8 @@ header {
 ***************************/
 
 @media only screen and (min-width: 320px) {
-   header{
+   header {
       background-color: #333;
-
    }
 
    #item-1 {
@@ -95,8 +94,17 @@ header {
 
    .main-nav a {
       padding: 6px 6px;
+      font-size: .98em;
    }
 
+   .main-nav a:hover {
+      background-color: white
+      color: #fff;
+   }
+
+   .nav-dot {
+      display: none;
+   }
    .icons {
       display: none;
       justify-content: center;
@@ -126,7 +134,8 @@ header {
    }
 
    .main-nav a {
-      padding: 10px 8px;
+      padding: 10px 2px;
+      font-size: .85em;
    }
 
    #item-1 {
@@ -134,8 +143,17 @@ header {
    }
 
    #item-4 {
+      padding-top: 15px;
       padding-bottom: 4%;
    }
+
+   .nav-dot {
+      display:inline;
+      padding-left: 4px;
+      vertical-align: super;
+      text-align: center;
+   }
+
 
    .banner {
       height: 40vh;
@@ -150,7 +168,7 @@ header {
 
 @media (min-width: 720px){
    .main-nav a {
-   	padding: 10px 14px;
+   	padding: 10px 4px;
    }
 
    #item-1 {
@@ -161,6 +179,9 @@ header {
       padding-bottom: 4%;
    }
 
+   .nav-dot {
+      padding-left: 10px;
+   }
 
    .icons a {
       padding: 10px 10px;
@@ -173,6 +194,10 @@ header {
    .banner-logo {
       height: 200px;
       width: 400px;
+   }
+
+   .main-nav a {
+      font-size: 1.05em;
    }
 
 }
