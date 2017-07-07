@@ -29,7 +29,6 @@ a {
 
 header {
    width: 100%;
-   /*position: fixed;*/
    background-color: rgba(0,0,0,0.2);
    z-index: 20;
 }
@@ -37,7 +36,6 @@ header {
 .main-nav {
    margin: 0 5%;
    letter-spacing: 1.2px;
-
 }
 
 .main-nav a {
@@ -48,15 +46,16 @@ header {
    text-transform: uppercase;
 }
 
+.main-nav a:hover {
+	font-weight: bold;
+}
+
 .icons {
    margin: 0 5%;
 }
+
 .icons a {
    display: block;
-}
-
-.main-nav a:hover {
-	font-weight: bold;
 }
 
 .icons img:hover {
@@ -67,6 +66,7 @@ main {
    background-attachment: fixed;
    margin: 0;
 }
+
 .banner {
    background: url('../images/splash.jpg');
    background-repeat: no-repeat;
@@ -77,11 +77,9 @@ main {
    justify-content: center;
 }
 
-
 .banner-logo {
    margin: 0 auto;
 }
-
 
 .about {
    display: flex;
@@ -98,25 +96,18 @@ main {
 
 .menu {
    background: url('../images/slider_asstd.jpg');
-   background-repeat: no-repeat;
-   background-size: cover;
-   width: 50%;
-   height: 250px;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   text-align: center;
-   color: white;
-   text-shadow: 2px 2px 3px #333;
-   letter-spacing: 1.4px;
+
 }
 
 .specials {
    background: url('../images/slider_pasta2.jpg');
+
+}
+.menu, .specials {
    background-repeat: no-repeat;
    background-size: cover;
    width: 50%;
-   height: 250px;
+   height: 150px;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -166,16 +157,18 @@ main {
    .banner-logo {
       margin: 0 auto 8% auto;
       width: 200px;
+      position: relative;
    }
 
    .about h1 {
-      margin-top: 15%;
-      margin-bottom: 4%;
+      margin-top: 10%;
+      margin-bottom: 0;
       font-size: 1.8em;
    }
 
    .about p {
       font-size: .95em;
+      margin-bottom: 10%;
    }
 }
 
@@ -240,6 +233,10 @@ main {
    .about p {
       font-size: .95em;
       line-height: 1.6;
+   }
+
+   .menu, .specials {
+      height: 250px;
    }
 
 }
