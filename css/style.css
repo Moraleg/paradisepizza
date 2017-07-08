@@ -21,11 +21,16 @@ ul {
 
 a {
    text-decoration: none;
+   color: white;
 }
 
 /*******************************
        Base Layout Styles
 ********************************/
+
+.hidden {
+  display: none;
+}
 
 header {
    width: 100%;
@@ -134,6 +139,53 @@ main {
    letter-spacing: 1.4px;
 }
 
+.menu:hover, .specials:hover, .contact:hover {
+	opacity: 0.7;
+}
+
+.last {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+
+footer {
+   padding-right: 8%;
+}
+
+footer, .icon-footer {
+   background-color: #333;
+   display: flex;
+   justify-content: center;
+   color: white;
+   margin-top: 8%;
+   padding-left: 8%;
+}
+
+.info {
+   width: 50%;
+   border-right: 2px solid white;
+   margin-top: 8%;
+   align-self: center;
+}
+
+.info p {
+   margin-right: 20%;
+}
+
+.icon-footer {
+   width: 50%;
+   height: 50%;
+   margin-left: 10%;
+   display: flex;
+   align-self: center;
+}
+
+
+.icon-footer li {
+   margin-right: 15px;
+}
+
 
 /***************************
        MEDIA QUERIES
@@ -154,7 +206,7 @@ main {
 
    .main-nav a {
       padding: 6px 6px;
-      font-size: .98em;
+      font-size: 1em;
    }
 
    .nav-dot {
@@ -178,7 +230,7 @@ main {
    }
 
    .about h1 {
-      margin-top: 10%;
+      margin-top: 8%;
       margin-bottom: 0;
       font-size: 1.8em;
    }
@@ -186,6 +238,52 @@ main {
    .about p {
       font-size: .95em;
       margin-bottom: 10%;
+      margin-top: 2%;
+   }
+
+   .last {
+      padding-top: 25px;
+      height: 20vh;
+   }
+
+   .yelp-logo {
+      margin: 0 6%;
+      width: 30%
+   }
+   .yelp-logo img {
+      width: 38vw;
+   }
+
+   .yelp-description {
+      margin: 0 6%;
+   }
+
+   .yelp-description h3 {
+      font-size: 1.2em;
+      letter-spacing: 1.4;
+      margin-bottom: 0;
+   }
+
+   .yelp-description p {
+      font-size: 0.85em;
+      margin-top: 2%;
+   }
+
+   .red {
+      color: #D40000;
+   }
+
+   .icon-footer img {
+      width: 10vw;
+   }
+
+   .info {
+      font-size: 0.82em;
+   }
+
+   .number {
+      font-size: 1.25em;
+      letter-spacing: 1.6;
    }
 }
 
@@ -250,6 +348,7 @@ main {
    .about p {
       font-size: .95em;
       line-height: 1.6;
+      margin-top: 0;
    }
 
    .menu, .specials {
@@ -262,6 +361,21 @@ main {
       font-size: 1.2em;
    }
 
+   .last {
+      padding-top: 40px;
+   }
+
+   .yelp-logo img {
+      width: 32vw;
+   }
+
+   .yelp-description p {
+      margin-top: 4%;
+   }
+
+   .icon-footer img {
+      width: 8vw;
+   }
 
 }
 
@@ -301,7 +415,7 @@ main {
 
    .about h1 {
       font-size: 2.2em;
-      margin-top: 8%;
+      margin-top: 6%;
       margin-bottom: 2%;
    }
 
@@ -318,13 +432,40 @@ main {
       height: 200px;
    }
 
+   .last {
+      padding-top: 60px;
+   }
+
+   .yelp-description h3 {
+      font-size: 2em;
+
+   }
+   .yelp-description p {
+      margin-top: 4%;
+      font-size: 1em;
+   }
+
+   .icon-footer img {
+      width: 6vw;
+      margin-right: 20px;
+   }
+
+   .info {
+      font-size: 1em;
+   }
+
+   .number {
+      font-size: 1.4em;
+      letter-spacing: 1.6;
+   }
+
 
 }
 
 @media (min-width: 1025px){
 
    #item-4 {
-      padding-top: 16px;
+      padding-top: 17px;
       padding-bottom: 4%;
    }
 
@@ -333,7 +474,7 @@ main {
    }
 
    .main-nav a {
-      font-size: 1.2em;
+      font-size: 1.4em;
    }
 
    .banner {
@@ -357,6 +498,37 @@ main {
 
    .contact {
       height: 260px;
+   }
+
+   .last {
+      padding-top: 80px;
+   }
+
+   .yelp-description h3 {
+      font-size: 2.5em;
+
+   }
+   .yelp-description p {
+      font-size: 1.5em;
+      flex-flow: wrap;
+   }
+
+   .icon-footer {
+      margin-left: 8%;
+   }
+
+   .icon-footer img {
+      width: 5vw;
+      margin-right: 40px;
+   }
+
+   .info {
+      font-size: 1.4em;
+   }
+
+   .number {
+      font-size: 1.6em;
+      letter-spacing: 1.6;
    }
 
 }
