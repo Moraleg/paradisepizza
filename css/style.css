@@ -2,10 +2,6 @@
        Base Element Styles
 ********************************/
 
-* {
-   box-sizing: border-box;
-}
-
 body {
    margin: 0 auto;
    padding: 0;
@@ -150,7 +146,19 @@ main {
 }
 
 footer {
+   /*margin-top: 2%;*/
+   background-color: #333;
+   position: inherit;
+   padding: 20px;
+}
+
+footer p {
+   margin: 0 auto;
+}
+
+/*footer {
    padding-right: 8%;
+   margin-top: 100px;
 }
 
 footer, .icon-footer {
@@ -158,22 +166,26 @@ footer, .icon-footer {
    display: flex;
    justify-content: center;
    color: white;
-   margin-top: 8%;
    padding-left: 8%;
-}
+}*/
 
 .info {
    width: 50%;
    border-right: 2px solid white;
-   margin-top: 8%;
    align-self: center;
+
 }
 
 .info p {
    margin-right: 20%;
 }
 
-.icon-footer {
+.address {
+   padding-top: 50px;
+
+}
+
+/*.icon-footer {
    width: 50%;
    height: 50%;
    margin-left: 10%;
@@ -184,7 +196,7 @@ footer, .icon-footer {
 
 .icon-footer li {
    margin-right: 15px;
-}
+}*/
 
 
 /***************************
@@ -242,7 +254,8 @@ footer, .icon-footer {
    }
 
    .last {
-      padding-top: 25px;
+      padding-top: 2%;
+      padding-bottom: 2%;
       height: 20vh;
    }
 
@@ -273,9 +286,9 @@ footer, .icon-footer {
       color: #D40000;
    }
 
-   .icon-footer img {
-      width: 10vw;
-   }
+   /*.icon-footer img {
+      width: 25px;
+   }*/
 
    .info {
       font-size: 0.82em;
@@ -361,9 +374,9 @@ footer, .icon-footer {
       font-size: 1.2em;
    }
 
-   .last {
+   /*.last {
       padding-top: 40px;
-   }
+   }*/
 
    .yelp-logo img {
       width: 32vw;
@@ -373,9 +386,9 @@ footer, .icon-footer {
       margin-top: 4%;
    }
 
-   .icon-footer img {
-      width: 8vw;
-   }
+   /*.icon-footer img {
+      width: 25px;
+   }*/
 
 }
 
@@ -432,9 +445,9 @@ footer, .icon-footer {
       height: 200px;
    }
 
-   .last {
+   /*.last {
       padding-top: 60px;
-   }
+   }*/
 
    .yelp-description h3 {
       font-size: 2em;
@@ -445,10 +458,10 @@ footer, .icon-footer {
       font-size: 1em;
    }
 
-   .icon-footer img {
-      width: 6vw;
+   /*.icon-footer img {
+      width: 30px;
       margin-right: 20px;
-   }
+   }*/
 
    .info {
       font-size: 1em;
@@ -501,7 +514,8 @@ footer, .icon-footer {
    }
 
    .last {
-      padding-top: 80px;
+      padding-top: 4%;
+      padding-bottom: 4%;
    }
 
    .yelp-description h3 {
@@ -513,21 +527,21 @@ footer, .icon-footer {
       flex-flow: wrap;
    }
 
-   .icon-footer {
+   /*.icon-footer {
       margin-left: 8%;
    }
 
    .icon-footer img {
-      width: 5vw;
+      width: 35px;
       margin-right: 40px;
-   }
+   }*/
 
    .info {
-      font-size: 1.4em;
+      font-size: 1.05em;
    }
 
    .number {
-      font-size: 1.6em;
+      font-size: 1.4em;
       letter-spacing: 1.6;
    }
 
