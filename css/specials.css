@@ -1,0 +1,137 @@
+/*******************************
+       Base Element Styles
+********************************/
+
+body {
+   margin: 0 auto;
+   padding: 0;
+   line-height: 1.4;
+   font-family: 'Helvetica Nueu', sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+   text-decoration: none;
+   color: white;
+}
+
+/*******************************
+       Base Layout Styles
+********************************/
+
+.banner {
+   background: url('../images/dough.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+
+.specials-banner h1 {
+   text-align: center;
+   text-shadow: 2px 2px 3px #333;
+   color: #fff;
+}
+
+.section-container {
+   display: flex;
+   flex-direction: row;
+   text-align: center;
+   margin: 0 20px;
+}
+
+.specials1, .specials2 {
+   margin: 0 auto;
+}
+
+.specials-heading {
+   color: #333;
+   margin-bottom: 5px;
+   text-align: center;
+}
+
+small {
+   font-style: italic;
+   text-align: center;
+}
+
+.specials-price {
+   text-align: center;
+   color: #878787;
+}
+
+hr {
+   width: 90%;
+}
+
+/***************************
+       MEDIA QUERIES
+***************************/
+
+@media only screen and (min-width: 320px) {
+
+   .specials-banner h1 {
+      font-size: 2.6em;
+      letter-spacing: 2px;
+      margin: 0 0 40px 0;
+   }
+
+   .section-container {
+      flex-wrap: wrap;
+   }
+
+   .specials-heading {
+      font-size: 6vw;
+   }
+
+   small {
+      font-size: 13px;
+   }
+
+   .specials-price {
+      font-size: 5vw;
+      margin-top: 6px;
+   }
+}
+
+@media (min-width: 480px){
+
+   .section-container {
+      flex-wrap: nowrap;
+      margin-top: 25px;
+   }
+
+   .specials-heading {
+      font-size: 4vw;
+   }
+
+   .specials-price {
+      font-size: 24px;
+   }
+}
+
+@media (min-width: 720px){
+
+   .specials-heading {
+      font-size: 3vw;
+   }
+
+   .specials-price {
+      font-size: 26px;
+   }
+}
+
+@media (min-width: 1025px){
+
+   .specials-price {
+      font-size: 28px;
+   }
+}
