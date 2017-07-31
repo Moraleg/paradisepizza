@@ -3,6 +3,7 @@
 ********************************/
 
 body {
+   max-height: 100%;
    margin: 0 auto;
    padding: 0;
    line-height: 1.4;
@@ -23,45 +24,6 @@ a {
 /*******************************
        Base Layout Styles
 ********************************/
-
-.hidden {
-  display: none;
-}
-
-header {
-   width: 100%;
-   background-color: rgba(0,0,0,0.2);
-   z-index: 20;
-}
-
-.main-nav {
-   margin: 0 5%;
-   letter-spacing: 1.2px;
-}
-
-.main-nav a {
-	text-align: center;
-	display: block;
-	padding: 10px 14px;
-   color: white;
-   text-transform: uppercase;
-}
-
-.main-nav a:hover {
-	font-weight: bold;
-}
-
-.icons {
-   margin: 0 5%;
-}
-
-.icons a {
-   display: block;
-}
-
-.icons img:hover {
-   opacity: .7;
-}
 
 main {
    background-attachment: fixed;
@@ -145,86 +107,15 @@ main {
    align-items: center;
 }
 
-footer {
-   display: flex;
-   flex-direction: column;
-   background-color: #333;
-   position: inherit;
-   color: white;
-}
-
-.footer {
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-}
-
-footer p {
-   margin: 10px auto 0 auto;
-   line-height: normal;
-}
-
-.icon-footer {
-   display: inline-block;
-}
-
-.info {
-   display: inline-block;
-   width: 40%;
-   margin: 20px 0 20px auto;
-   border-right: 1px solid white;
-}
-
-.info p {
-   margin-right: 20%;
-}
-
-.icons-footer-container {
-   margin: 0 auto;
-}
-
-.icon-footer li {
-   display: inline-block;
-}
-
-.icon-footer li a {
-   text-align: center;
-}
 
 /***************************
        MEDIA QUERIES
 ***************************/
 
 @media only screen and (min-width: 320px) {
-   header {
-      background-color: #333;
-   }
-
-   #item-1 {
-      padding-top: 4%;
-   }
-
-   #item-4 {
-      padding-bottom: 4%;
-   }
-
-   .main-nav a {
-      padding: 6px 6px;
-      font-size: 1em;
-   }
-
-   .nav-dot {
-      display: none;
-   }
-
-   .icons {
-      display: none;
-      justify-content: center;
-   }
 
    .banner {
       background-position: 30% 110%;
-      /*height: 30vh;*/
       height: 220px;
    }
 
@@ -279,71 +170,12 @@ footer p {
       color: #D40000;
    }
 
-   .info {
-      font-size: 0.82em;
-   }
-
-   .number {
-      font-size: 1.25em;
-      letter-spacing: 1.6;
-   }
-
-   .icons-footer-container {
-      display: flex;
-   }
-
-   .icons-footer-container img {
-      width: 45px;
-      margin: 0 5px;
-   }
 }
 
 @media (min-width: 480px){
-   header, .main-nav, .icons {
-      display: flex;
-   }
-
-   header {
-      background-color: rgba(0,0,0,0.2);
-      justify-content: space-between;
-      flex-direction: row;
-      position: absolute;
-   }
-
-   .main-nav a {
-      padding: 10px 2px;
-      font-size: .85em;
-      text-shadow: 2px 2px 3px #333;
-   }
-
-   #item-1 {
-      padding-top: 10px;
-   }
-
-   #item-4 {
-      padding-top: 15px;
-      padding-bottom: 4%;
-   }
-
-   .nav-dot {
-      display:inline;
-      padding-left: 4px;
-      vertical-align: super;
-      text-align: center;
-   }
-
-   .icons img {
-      width: 20px;
-   }
-
-   .icons a {
-      padding: 15px 12px;
-   }
 
    .banner {
-      /*height: 40vh;*/
       height: 340px;
-
    }
 
    .banner-logo {
@@ -375,10 +207,6 @@ footer p {
       font-size: 1.2em;
    }
 
-   /*.last {
-      padding-top: 40px;
-   }*/
-
    .yelp-logo img {
       width: 32vw;
    }
@@ -387,39 +215,11 @@ footer p {
       margin-top: 4%;
    }
 
-   .icons-footer-container img {
-      width: 45px;
-   }
-
 }
 
 @media (min-width: 720px){
-   .main-nav a {
-   	padding: 10px 4px;
-   }
-
-   #item-1 {
-      padding-top: 10px;
-   }
-
-   #item-4 {
-      padding-bottom: 4%;
-   }
-
-   .main-nav a {
-      font-size: 1.05em;
-   }
-
-   .nav-dot {
-      padding-left: 10px;
-   }
-
-   .icons img {
-      width: 25px;
-   }
 
    .banner {
-      /*height: 50vh;*/
       height: 400px;
    }
 
@@ -448,10 +248,6 @@ footer p {
       height: 200px;
    }
 
-   /*.last {
-      padding-top: 60px;
-   }*/
-
    .yelp-description h3 {
       font-size: 2em;
 
@@ -461,39 +257,11 @@ footer p {
       font-size: 1em;
    }
 
-   .info {
-      font-size: 1em;
-   }
-
-   .number {
-      font-size: 1.4em;
-      letter-spacing: 1.6;
-   }
-
-   .icons-footer-container img {
-      width: 50px;
-   }
-
-
 }
 
 @media (min-width: 1025px){
 
-   #item-4 {
-      padding-top: 17px;
-      padding-bottom: 4%;
-   }
-
-   .icons img {
-      width: 30px;
-   }
-
-   .main-nav a {
-      font-size: 1.4em;
-   }
-
    .banner {
-      /*height: 60vh;*/
       height: 500px;
    }
 
@@ -532,19 +300,6 @@ footer p {
    .yelp-description p {
       font-size: 1.5em;
       flex-flow: wrap;
-   }
-
-   .info {
-      font-size: 1.05em;
-   }
-
-   .number {
-      font-size: 1.4em;
-      letter-spacing: 1.6;
-   }
-
-   .icons-footer-container img {
-      width: 55px;
    }
 
 }

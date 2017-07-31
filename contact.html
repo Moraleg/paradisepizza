@@ -2,9 +2,9 @@
 <html>
    <head>
       <meta charset="utf-8">
-      <title>Paradise Pizza | Ft. Myers</title>
+      <title>Paradise Pizza | Contact</title>
       <link rel="stylesheet" href="css/header-footer.css">
-      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/contact.css">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <script
      src="https://code.jquery.com/jquery-2.2.4.min.js"
@@ -24,7 +24,7 @@
          <nav class="mobile overlay">
             <a href="index.html">HOME</a>
             <a href="specials.html">SPECIALS</a>
-            <a href="menu.html">MENU</a>
+            <a class="active" href="menu.html">MENU</a>
             <a href="contact.html">CONTACT</a>
          </nav>
       </div>
@@ -32,8 +32,8 @@
          <ul class="main-nav">
             <li><a id="item-1" href="index.html">HOME<span class="nav-dot">.</span></a></li>
             <li><a href="specials.html">SPECIALS<span class="nav-dot">.</span></a></li>
-            <li><a href="menu.html">MENU<span class="nav-dot">.</span></a></li>
-            <li><a id="item-4" href="contact.html">CONTACT</a></li>
+            <li><a class="active" href="menu.html">MENU<span class="nav-dot">.</span></a></li>
+            <li><a id="item-4" href="#">CONTACT</a></li>
          </ul>
          <ul class="icons">
             <li><a class="item-5 item" href="https://www.facebook.com/Paradise-Pizza-Ft-Myers-403911583098489/?fref=ts" target="_blank"><img src="images/Facebook_White_logo.png" alt="Facebook Icon"></a></li>
@@ -41,35 +41,36 @@
             <li><a class="item-7 item" href="https://www.instagram.com/paradisepizzafm/" target="_blank"><img src="images/IG_White_logo.png" alt="Instagram Icon"></a></li>
          </ul>
       </header>
-      <main class="banner" data-stellar-background-ratio="0.5">
-         <img class="banner-logo" src="images/Paradise-Main-Logo.png" alt="Paradise Pizza Logo">
+      <main class="banner contact-banner" data-stellar-background-ratio="0.5">
+         <h1>CONTACT</h1>
       </main>
-      <section class="about">
-         <h1>ABOUT US</h1>
-         <p><em>Paradise Pizza serves the highest quality Italian Specialties around! Dough made from scratch daily, sauces made from family recipes and homemade meatballs are only a few examples of what makes Paradise so special. Full menu available for dine-in, carry-out and delivery. The name says it all, it's just Paradise!</em></p>
-      </section>
-      <div class="mid">
-         <section class="mid-container">
-            <section class="menu">
-               <h2><a href="menu.html">MENU</a></h2>
-            </section>
-            <section class="specials">
-               <h2><a href="specials.html">SPECIALS</a></h2>
-            </section>
-         </section>
-         <section class="contact">
-            <h2><a href="contact.html">CONTACT</a></h2>
-         </section>
-      </div>
-      <section class="last">
-         <div class="yelp-logo">
-            <a href="https://www.yelp.com/biz/paradise-pizza-fort-myers-fort-myers-2" target="_blank"><img src="images/front_page.png" alt="Yelp Icon"></a>
+      <section class="content-wrapper">
+         <div class="email-us-container">
+            <p>EMAIL US</p>
+            <small>Go ahead, we don't bite!</small>
+            <p>paradisepizzafm@gmail.com</p>
          </div>
-         <div class="yelp-description">
-            <h3>Check us out on <span class="red">Yelp</span>!</h3>
-            <p>Check out what our guests have said about their experience.</p>
+         <div class="form-wrapper">
+            <form action="https://formspree.io/paradisepizza.fortmyers@gmail.com" method="POST">
+               <div class="NE-container">
+                  <label for="name"></label>
+                  <input id="name" type="text" name="name" placeholder="Name"/>
+                  <label for="email"></label>
+                  <input id="email" type="text" name="email" placeholder="Your Email"/>
+                  <label for="message"></label>
+               </div>
+               <textarea name="message" rows="10" cols="35" placeholder="Your Message"></textarea>
+               <input type="submit" value="Send">
+            </form>
+            <div class="call-container">
+               <h3>CALL US</h3>
+               <p>239-694-1800</p>
+            </div>
          </div>
+         <div class=""></div>
       </section>
+      <!-- <section>
+      </section> -->
       <footer>
          <section class="footer">
             <div class="info">

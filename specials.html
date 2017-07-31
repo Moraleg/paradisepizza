@@ -3,7 +3,7 @@
    <head>
       <meta charset="utf-8">
       <title>Paradise Pizza | Specials</title>
-      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/header-footer.css">
       <link rel="stylesheet" href="css/specials.css">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <script
@@ -13,11 +13,27 @@
    </head>
    <body>
       <header>
+         <!--Mobile Nav -->
+         <div class="menu-toggle openBtn">
+            <div class="hamburger"></div>
+         </div>
+      <div id="nav" class="overlay">
+         <div class="mobile-header">
+            <a href="#" class="closeBtn">&times;</a>
+         </div>
+         <nav class="mobile overlay">
+            <a href="index.html">HOME</a>
+            <a class="active" href="specials.html">SPECIALS</a>
+            <a href="menu.html">MENU</a>
+            <a href="contact.html">CONTACT</a>
+         </nav>
+      </div>
+      <!--End Mobile Nav -->
          <ul class="main-nav">
             <li><a id="item-1" href="index.html">HOME<span class="nav-dot">.</span></a></li>
-            <li><a href="specials.html">SPECIALS<span class="nav-dot">.</span></a></li>
-            <li><a href="#">MENU<span class="nav-dot">.</span></a></li>
-            <li><a id="item-4" href="#">CONTACT</a></li>
+            <li><a class="active" href="specials.html">SPECIALS<span class="nav-dot">.</span></a></li>
+            <li><a href="menu.html">MENU<span class="nav-dot">.</span></a></li>
+            <li><a id="item-4" href="contat.html">CONTACT</a></li>
          </ul>
          <ul class="icons">
             <li><a class="item-5 item" href="https://www.facebook.com/Paradise-Pizza-Ft-Myers-403911583098489/?fref=ts" target="_blank"><img src="images/Facebook_White_logo.png" alt="Facebook Icon"></a></li>

@@ -1,8 +1,8 @@
 /*******************************
        Base Element Styles
 ********************************/
-
-body {
+body, html {
+   max-height: 100vh;
    margin: 0 auto;
    padding: 0;
    line-height: 1.4;
@@ -20,6 +20,7 @@ a {
    color: white;
 }
 
+
 /*******************************
        Base Layout Styles
 ********************************/
@@ -34,42 +35,66 @@ a {
    justify-content: center;
 }
 
+.contact-container {
+   margin-top: 45px;
+}
 
-.specials-banner h1 {
+.contact-banner h1 {
    text-align: center;
    text-shadow: 2px 2px 3px #333;
    color: #fff;
 }
 
-.section-container {
+.content-wrapper {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   margin: 0 auto
+}
+
+form {
+   width: 345px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin: 0 auto;
+   border: 1px solid #000;
+}
+
+input, textarea {
+   border: 1px solid #000;
+   background-color: #fff;
+}
+
+textarea {
+   resize: none;
+}
+
+.content-wrapper p {
+   margin: 0;
+}
+
+.NE-container {
+   margin: 0 auto;
+   width: 100%;
    display: flex;
    flex-direction: row;
-   text-align: center;
-   margin: 0 20px;
+   justify-content: center;
 }
 
-.specials1, .specials2 {
-   margin: 0 auto;
+#name {
+   width: 50%;
 }
 
-.specials-heading {
-   color: #333;
-   margin-bottom: 5px;
-   text-align: center;
+#email {
+   width: 50%;
 }
 
 small {
    font-style: italic;
-   text-align: center;
-}
-
-.specials-price {
-   text-align: center;
-   color: #878787;
-}
-
-hr {
-   width: 90%;
+   margin: 0;
 }
 
 /***************************
@@ -78,76 +103,65 @@ hr {
 
 @media only screen and (min-width: 320px) {
 
-   .specials-banner h1 {
+   .contact-banner h1 {
       font-size: 3em;
       letter-spacing: 2px;
       /*margin: 0 0 40px 0;*/
    }
 
-   .section-container {
-      flex-wrap: wrap;
+   .email-us-container {
+      margin: 25px;
    }
 
-   .specials-heading {
-      font-size: 6vw;
+   .email-us-container p {
+      font-weight: bold;
    }
 
-   small {
-      font-size: 13px;
+   input, textarea {
+      padding: 5px 0 5px 10px;
+      font-style: italic;
    }
 
-   .specials-price {
-      font-size: 5vw;
-      margin-top: 6px;
+   .call-container {
+      width: 85%;
+      margin: 0 auto;
    }
+
+   .call-container h3 {
+      border-top: 1px solid #878787;
+      margin: 20px 0 0;
+      padding-top:15px;
+   }
+
+   .call-container p {
+      font-size: 18px;
+      font-weight: bold;
+      color: #878787;
+   }
+
 }
 
 @media (min-width: 480px){
 
-   .specials-banner h1 {
+   .contact-banner h1 {
       font-size: 3.5em;
       margin: 20px auto 0 auto;
       text-align: center;
-   }
-
-   .section-container {
-      flex-wrap: nowrap;
-      margin-top: 25px;
-   }
-
-   .specials-heading {
-      font-size: 4vw;
-   }
-
-   .specials-price {
-      font-size: 24px;
    }
 }
 
 @media (min-width: 720px){
 
-   .specials-banner h1 {
+   .contact-banner h1 {
       font-size: 5em;
       letter-spacing: 2.8px;
-   }
-
-   .specials-heading {
-      font-size: 3vw;
-   }
-
-   .specials-price {
-      font-size: 26px;
    }
 }
 
 @media (min-width: 1025px){
 
-   .specials-banner h1 {
+   .contact-banner h1 {
       font-size: 5.5em;
       letter-spacing: 3px;
-   }
-
-   .specials-price {
-      font-size: 28px;
    }
 }
