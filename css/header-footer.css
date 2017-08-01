@@ -132,13 +132,6 @@ footer p {
       transform: rotate(135deg);
    }*/
 
-
-   .banner {
-      background-position: 30% 110%;
-      height: 220px;
-   }
-
-
    .main-nav, .nav-dot {
       display: none;
    }
@@ -228,7 +221,7 @@ footer p {
 
    .banner {
       background-position: 30% 110%;
-      height: 220px;
+      height: 240px;
    }
 
    .info {

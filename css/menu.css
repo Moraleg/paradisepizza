@@ -20,6 +20,10 @@ a {
    color: white;
 }
 
+p, small, h1 {
+   font-family: "Open Sans";
+}
+
 /*******************************
        Base Layout Styles
 ********************************/
@@ -57,6 +61,7 @@ main {
    /*background-color: #93A8AC;*/
    /*background-color: #779CAB;*/
    background-color: #689689;
+   /*background-color: #7ebdc2;*/
    /*background-color: #5D737E;*/
    /*background-color: #565555;*/
    color: #fff;
@@ -98,8 +103,6 @@ small {
 
 .item-price {
    text-align: center;
-   /*color: #779CAB;*/
-   /*color: #878787;*/
    color: #333;
    margin: 0;
 }
@@ -155,8 +158,7 @@ small {
 
 
    .banner {
-      /*background-position: center;*/
-      height: 220px;
+      height: 240px;
    }
 
    .menu-banner h1 {
@@ -183,15 +185,9 @@ small {
       margin: 12px auto;
    }
 
-   /*.menu-subnav a:hover {
-      font-weight: bold;
-      letter-spacing: 2px;
-   }*/
-
    .section-container {
       flex-wrap: wrap;
    }
-
 
    .menu-container h2 {
       font-size: 20px;
@@ -216,13 +212,10 @@ small {
       position: fixed;
       right: 30px;
       bottom: 30px;
-      /*text-indent: -9999px;*/
       cursor: pointer;
-      /*outline: 0;*/
       font-size: 0;
       display: none;
    }
-
 
 }
 
@@ -256,19 +249,9 @@ small {
    }
 
    #scroll-to-top {
-      background: url('../images/scroll.png') no-repeat center center;
       width: 35px;
       height: 35px;
-      position: fixed;
-      right: 30px;
-      bottom: 30px;
-      /*text-indent: -9999px;*/
-      cursor: pointer;
-      /*outline: 0;*/
-      font-size: 0;
-      display: none;
    }
-
 
 }
 
@@ -300,7 +283,6 @@ small {
       font-size: 20px;
    }
 
-
 }
 
 @media (min-width: 1025px){
@@ -317,11 +299,6 @@ small {
       font-size: 5.5em;
       letter-spacing: 3px;
    }
-
-   /*.menu-subnav ul {
-      margin: 0 auto;
-      display: flex;
-   }*/
 
    .menu-subnav li {
       display: inline-block;

@@ -20,6 +20,10 @@ a {
    color: white;
 }
 
+p, small, h1 {
+   font-family: "Open Sans";
+}
+
 /*******************************
        Base Layout Styles
 ********************************/
@@ -54,7 +58,7 @@ a {
 
 .specials-heading {
    color: #333;
-   margin-bottom: 5px;
+   margin-bottom: 0;
    text-align: center;
 }
 
@@ -65,6 +69,7 @@ small {
 
 .specials-price {
    text-align: center;
+   /*color: #689689;*/
    color: #878787;
 }
 
@@ -100,6 +105,18 @@ hr {
       font-size: 5vw;
       margin-top: 6px;
    }
+
+   #scroll-to-top {
+      background: url('../images/scroll.png') no-repeat center center;
+      width: 32px;
+      height: 30px;
+      position: fixed;
+      right: 30px;
+      bottom: 30px;
+      cursor: pointer;
+      font-size: 0;
+      display: none;
+   }
 }
 
 @media (min-width: 480px){
@@ -116,13 +133,19 @@ hr {
    }
 
    .specials-heading {
-      font-size: 4vw;
+      font-size: 24px;
    }
 
    .specials-price {
       font-size: 24px;
    }
+
+   #scroll-to-top {
+      width: 35px;
+      height: 35px;
+   }
 }
+
 
 @media (min-width: 720px){
 
