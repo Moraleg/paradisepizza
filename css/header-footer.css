@@ -47,6 +47,7 @@ main {
 	padding: 10px 14px;
    color: white;
    text-transform: uppercase;
+   font-family: "Open Sans";
 }
 
 .main-nav a:hover, nav a:hover {
@@ -151,7 +152,6 @@ footer p {
      background-color: rgba(0, 0, 0, 0.2);
      border-radius: 4px;
    }
-
 
    .hamburger, .hamburger::before,
    .hamburger::after {
