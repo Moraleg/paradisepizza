@@ -1,5 +1,5 @@
 /*******************************
-       Base Element Styles
+Base Element Styles
 ********************************/
 body, html {
    max-width: 100%;
@@ -11,9 +11,9 @@ body, html {
 }
 
 ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+   margin: 0;
+   padding: 0;
+   list-style: none;
 }
 
 a {
@@ -26,7 +26,7 @@ p, small, h1 {
 }
 
 /*******************************
-       Base Layout Styles
+Base Layout Styles
 ********************************/
 
 .banner {
@@ -34,8 +34,15 @@ p, small, h1 {
    background-repeat: no-repeat;
    background-size: cover;
    width: 100%;
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+   -ms-flex-direction: column;
    flex-direction: column;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
    justify-content: center;
 }
 
@@ -51,16 +58,30 @@ p, small, h1 {
 
 .content-wrapper {
    width: 100%;
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+   -ms-flex-direction: column;
    flex-direction: column;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
    justify-content: center;
    text-align: center;
    margin: 0 auto
 }
 
 form {
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
+   -webkit-box-orient: vertical;
+   -webkit-box-direction: normal;
+   -ms-flex-direction: column;
    flex-direction: column;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
    justify-content: center;
    margin: 0 auto 30px auto;
    border: 1px solid #333;
@@ -72,7 +93,7 @@ input, textarea {
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  letter-spacing: 0.5px;
+   letter-spacing: 0.5px;
    font-style: italic;
 }
 ::-moz-placeholder { /* Firefox 19+ */
@@ -100,8 +121,15 @@ textarea {
 .NE-container {
    margin: 0 auto;
    width: 100%;
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
+   -webkit-box-orient: horizontal;
+   -webkit-box-direction: normal;
+   -ms-flex-direction: row;
    flex-direction: row;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
    justify-content: center;
 }
 
@@ -114,8 +142,8 @@ textarea {
 }
 
 #submit:hover {
- color: white;
- background-color: rgba(104, 150, 137, .8);
+   color: white;
+   background-color: rgba(104, 150, 137, .8);
 
 }
 
@@ -125,7 +153,11 @@ small {
 }
 
 #map {
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
    justify-content: center;
    margin: 0 auto;
    width: 100%;
@@ -134,7 +166,7 @@ small {
 
 
 /***************************
-       MEDIA QUERIES
+MEDIA QUERIES
 ***************************/
 
 @media only screen and (min-width: 320px) {
@@ -176,7 +208,7 @@ small {
       font-size: 20px;
       letter-spacing: 0.5px;
       font-weight: bold;
-      color: #878787;
+      color: #878787 !important;
    }
 
    #map {
